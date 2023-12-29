@@ -35,7 +35,7 @@ public class DistressedRedBall extends Item {
 
             if ((SqueakCount % 10) == 0) {
                 float f = 4.0F;
-                player.getLevel().explode(null, player.getX(), player.getY(), player.getZ(), 4.0F, Level.ExplosionInteraction.BLOCK);
+                player.level().explode(null, player.getX(), player.getY(), player.getZ(), 4.0F, Level.ExplosionInteraction.BLOCK);
             }
         }
 

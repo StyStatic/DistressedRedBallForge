@@ -16,7 +16,7 @@ public class FSSounds {
     static ResourceLocation location = new ResourceLocation("fluffysqueakyball:squeak");
 
     public static final RegistryObject<SoundEvent> SQUEAK_EVENT = SOUNDS.register("squeak",
-            ()-> new SoundEvent(location));
+            ()-> SoundEvent.createVariableRangeEvent(location));
 
     public static void register(IEventBus eventBus){
         SOUNDS.register(eventBus);
